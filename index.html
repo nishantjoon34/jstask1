@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number!</title>
+</head>
+<body id="bad">
+    <div>
+        <button onclick="play()" style="width: 150px; height: 50px; margin: 15px; font-size: 15px;"><b>Play Again</b></button>
+        <p style="float: right; color: white; font-size: 30px; margin: 18px;">(Between 1 and 100)</p>
+    </div>
+    <div style="text-align: center;"><h1 style="color: white;"><b>Guess My Number!</b></h1></div> 
+    <br><br>
+    <div>
+        <hr style="height: 3px; background-color: white;">
+        <div class="div1">
+            <p id="numbergenerate" style="font-size: 60px;">?</p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="first">
+                <p><input id="inp" type="number" style="font-size: 25px; padding: 20px;" placeholder="Enter the number"></p>
+            </div>
+            <div>
+                <button id="abc" onclick="equal()" style="width: 150px; height: 50px; margin: 15px; font-size: 15px;">Check</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="second">
+                <p id="text" style="color: white;">Start Guessing !!</p>
+            </div>
+            <div>
+                <p><span><img style="width: 30px;" src="./100.jpg"></span><span style="color: white; font-size: 20px;">Chances : <span id="chan">100</span></span></p>
+                <p><span><img style="width: 30px;" src="./medal.jpeg"></span><span style="color: white; font-size: 20px;">High Score : <span id="score">0</span></span></p>
+            </div>
+        </div>
+      </div>
+    <script src="./main.js">
+    </script>
+</body>
+</html>
